@@ -1,61 +1,83 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>WEB KOLABORASI</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            display: flex;
+            background-color: #333;
+            padding: 10px;
+            align-items: center;
+        }
+
+        .nav-btn {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-btn {
+            cursor: pointer;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
 </head>
 <body>
-    <div class="header">
-        <img src="header-web (1).png">
-    </div>
+    <nav class="navbar">
+        <a href="index.html"><img src="https://via.placeholder.com/40?text=Home" alt="Home" class="nav-btn"></a>
+        <a href="about.html"><img src="https://via.placeholder.com/40?text=About" alt="About" class="nav-btn"></a>
 
-    <!-- Navigation Bar -->
-    <div>
-        <ul>
-            <li><a href="index.html"><img src="button-web1.png"></a></li>
-            <li>
-                <a href="#"><img src="button-web2.png"></a>
-                <ul class="dropdown">
-                    <li><a href="bilateral.html"><img src="button-bilateral.png"></a></li>
-                    <li><a href="multilateral.html"><img src="button-multilateral.png"></a></li>
-                    <li><a href="regional.html"><img src="button-regional.png"></a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#"><img src="button-web3.png"></a>
-                <ul class="dropdown">
-                    <li><a href="pengertian.html"><img src="button-pengertian.png"></a></li>
-                    <li><a href="pembahasan.html"><img src="button-pembahasan.png"></a></li>
-                </ul>
-            </li>
-            <li><a href="kesimpulan.html"><img src="button-web4.png"></a></li>
-            <li><a href="dapus.html"><img src="button-web5.png"></a></li>
-        </ul>
-    </div>
-
-    <!-- Main Content -->
-    <main>
-        <div class="column side">
-            <h2 align="center">𓇼⋆˚ Sea Gallery 𓆝⋆｡</h2>
-            <p align="center">
-                <img src="image1.jpeg" height="100" width="200">
-                <img src="image2.png" height="100" width="200">
-                <img src="image3.jpeg" height="100" width="200">
-            </p>
+        <div class="dropdown">
+            <img src="https://via.placeholder.com/40?text=More" alt="More" class="nav-btn dropdown-btn">
+            <div class="dropdown-content">
+                <a href="#">Page 1</a>
+                <a href="#">Page 2</a>
+                <a href="#">Page 3</a>
+            </div>
         </div>
+    </nav>
 
-        <div class="column middle">
-            <h2 align="center">Pendahuluan</h2>
-            <p>Indonesia dikenal sebagai negara kepulauan terbesar di dunia dengan lebih dari 17.000 pulau, yang membentang di antara dua benua dan dua samudra. Letaknya yang strategis membuat Indonesia menjadi salah satu negara dengan keanekaragaman hayati laut terkaya di dunia. Potensi ini mencakup berbagai sumber daya laut, seperti terumbu karang, mangrove, hingga ikan laut tropis, yang tidak hanya memiliki nilai ekologi tetapi juga menjadi penopang utama ekonomi nasional. Berdasarkan data dari Badan Pusat Statistik (BPS), sektor perikanan dan kelautan menyumbang sekitar 7,5% terhadap Produk Domestik Bruto (PDB) Indonesia pada 2023.</p>
-            <p>Namun, potensi besar ini dihadapkan pada berbagai tantangan. Polusi laut, termasuk limbah plastik dan pencemaran bahan kimia, terus mengancam kelestarian ekosistem laut. Selain itu, praktik penangkapan ikan secara berlebihan (overfishing), perusakan habitat seperti terumbu karang, serta penangkapan ikan ilegal menjadi masalah yang sulit diatasi. Menurut laporan Kementerian Kelautan dan Perikanan (KKP), Indonesia kehilangan triliunan rupiah setiap tahun akibat praktik illegal, unreported, and unregulated (IUU) fishing.</p>
-            <p>Di sisi lain, perubahan iklim global juga mempengaruhi kondisi laut Indonesia. Naiknya suhu permukaan laut dan meningkatnya keasaman air laut berdampak langsung pada kerusakan terumbu karang dan menurunnya populasi ikan. Ancaman ini bukan hanya menjadi persoalan lokal, tetapi juga isu global yang membutuhkan perhatian dunia. Oleh karena itu, Sustainable Development Goals (SDGs) yang dirancang oleh Perserikatan Bangsa-Bangsa pada tahun 2015 memberikan kerangka kerja yang komprehensif untuk mengatasi tantangan tersebut.</p>
-            <p>Salah satu tujuan utama SDGs, yaitu Tujuan ke-14: "Kehidupan di Bawah Air" (Life Below Water), menggaris bawahi pentingnya pelestarian ekosistem laut dan pemanfaatan sumber dayanya secara berkelanjutan. Implementasi tujuan ini membutuhkan kerja sama internasional, dimana Indonesia memainkan peran strategis sebagai negara maritim. Hubungan bilateral dengan Australia, misalnya, menjadi salah satu bentuk konkret kerja sama yang bertujuan melindungi biodiversitas laut, mengurangi pencemaran, dan meningkatkan kapasitas masyarakat pesisir.</p>
-            <p>dfvbw5umetgbsfewr54e6y5utyhdfdfrt                                                                                                                                                                                                                                                                                                                              </p>
-        </div>
-    </main>
-
-    <div class="footer">
-        <img src="footer-web.png">
-    </div>
+    <h1>Welcome to the Simple Web!</h1>
+    <p>This is the home page.</p>
 </body>
 </html>
